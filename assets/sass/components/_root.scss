@@ -1,0 +1,175 @@
+
+// REGISTRO DE FONTS
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$Black: 900;
+$Bold: 700;
+$Medium: 500;
+$Regular: 400;
+
+
+$fast: .25s all ease-in-out;
+$slow: .4s all ease-in-out;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+img,picture{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+.theme{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 60px;
+    line-height: 110%;
+    font-weight: $Black;
+    color: $blue;
+    @include media(md){
+        font-size: 46px;
+        line-height: 120%;
+    }
+    @include media(sm){
+        font-size: 30px;
+    }
+}
+
+h2{
+    font-weight: $Black;
+    font-size: 40px;
+    line-height: 120%;
+    text-wrap: pretty;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: $black-light;
+    @include media(md){
+        font-size: 30px;
+        line-height: 130%;
+        margin-bottom: 20px;
+    }
+    @include media(sm){
+        font-size: 28px;
+        line-height: 140%;
+    }
+
+
+}
+
+p{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: $Regular;
+    line-height: 150%;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    color: $black-light;
+    @include media(md){
+        font-size: 18px;
+        margin-bottom: 1.5rem;
+    }
+    @include media(sm){
+        font-size: 1.1rem;
+        
+    }
+
+}
+
+.section{
+    padding: 4rem 0;
+    scroll-margin-top: 4rem;
+    @include media(md){
+        padding: 2rem 0;
+    }
+    p{
+        font-size: 18px;
+        font-style: normal;
+        font-weight: $Regular;
+        margin-bottom: 2rem;
+        color: $black;
+        @include media(md){
+            margin-bottom: 1.5rem;
+        }
+        @include media(sm){
+            font-size: 1rem;
+       
+        }
+    }
+}
+
+a{
+    font-weight: $Regular;
+    text-decoration: none;
+    
+}
+ul{
+    list-style: none;
+}
+.hidden{
+    overflow: hidden;
+}
+
+.h-100{
+    height: 100%;
+}
+
+.whatsapp{
+    position: fixed;
+    bottom: 3em;
+    right: 1em;
+    z-index: 999;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: $fast;
+    i{
+        font-size: 2.2em;
+        color: $white;
+    }
+    &:hover{
+        background: #21b858;
+    }
+}
+
+
+
+
+.lazy-load-map {
+    position: relative;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+  }
+
+  .lazy-load-map iframe {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    border: 0; 
+  }
+
+

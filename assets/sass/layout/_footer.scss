@@ -1,0 +1,181 @@
+footer{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background: $black;
+    position: relative;
+    background-size: cover;
+    flex-direction: column;
+    padding-top: 2rem;
+
+    .logo{
+        position: relative;
+        z-index: 999;
+        @include media(md){
+            width: 100%;
+          
+        }
+        a{
+            text-transform: uppercase;
+            font-size: 2em;
+            font-weight: $Bold;
+            display: flex;
+            @include media(md){
+                justify-content: center;
+                align-items: center;
+            }
+            .brand-img_container{
+                .brand-img{
+                    height: 59px;
+                    width: 59px;
+                    display: flex;
+                    border-radius: 50%;
+                    background: $orange;
+                    border: 1px solid $orange;
+                    position: relative;
+                    justify-content: center;
+                    align-items: center;
+                    @include media(md){
+                        width: 49px;
+                        height: 49px;
+                    }
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        @include media(md){
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                }
+            }
+            .brand{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 10px;
+                @include media(sm){
+                    margin-left: 5px;
+                }
+                span:first-child{
+                    font-size: 24px;
+                    font-weight: $Bold;
+                    color: $white;
+                     @include media(md){
+                        font-size: 18px;
+                     }
+                }
+                span{
+                    font-size: 12px;
+                    font-weight: $Regular;
+                    color: $white;
+                    text-transform: none;
+                     @include media(md){
+                        font-size: 10px;
+                     }
+                }
+            }
+        }
+    }
+    .pre-footer{
+        border-top: 1px solid #ebebeb2f;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 2rem;
+        p{
+            margin-bottom: 0;
+            color: $white;
+            opacity: .9;
+            font-size: .9rem;
+        }
+    }
+    .row{
+        padding-bottom: 2rem;
+    }
+    @include media(md){
+
+        .col-links{
+            order: 2;
+        }
+        .col-social{
+            margin-bottom: 1rem;
+        }
+    }
+    ul{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        li{
+            margin: 0 1rem;
+        }
+        &.links{
+            @include media(md){
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            li{
+                a{
+                    text-transform: uppercase;
+                    font-weight: $Bold;
+                }
+                @include media(md){
+                    margin: 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 1rem;
+                    a{
+                        margin: 0 auto;
+                      
+                    }
+                }
+                a{
+                    color: $white;
+                    transition: $fast;
+                    &:hover{
+                        color: $orange;
+                    }
+                }
+            }
+        }
+        &.social{
+            li{
+                margin: 0 .5rem;
+                a{
+                    color: $white;
+                    display: flex;
+                    width: 35px;
+                    height: 35px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    transition: $fast;
+                    opacity: .9;
+                    i{
+                        transition: $fast;
+                        font-size: 1rem;
+                     
+                    }
+                    &.facebook{
+                        background: #1877F2;
+                    }
+                    &.instagram{
+                        background: #E4405F;
+                    }
+                    &.twitter{
+                        background: #3f3f3f;
+                    }
+                    &:hover{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+

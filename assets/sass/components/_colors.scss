@@ -1,0 +1,28 @@
+$black: #000;
+$white: #fff;
+$black-light: #082425;
+$orange: #dc6226;
+$blue: #2f73e8;
+$green: #1CCF4A;
+$red: #EB4444;
+
+
+.text-orange{
+    color: $orange !important;
+}
+
+.bg-blue{
+    background-color: $blue;
+}
+
+.bg-green{
+    background-color: $green;
+}
+
+.bg-red{
+    background-color: $red;
+}
+
+.text-white{
+    color: $white !important;
+}

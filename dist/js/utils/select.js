@@ -1,0 +1,1 @@
+const select=()=>{};export{select};
